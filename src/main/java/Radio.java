@@ -3,9 +3,6 @@ public class Radio {
     private int currentStation;
     private int maxStation;
 
-    public Radio() {
-
-    }
 
     public Radio(int stationCount) {
         maxStation = stationCount;

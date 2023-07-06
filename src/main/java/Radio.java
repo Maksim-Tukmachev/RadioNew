@@ -57,25 +57,25 @@ public class Radio {
         this.currentStation = currentStation;
     }
 
-    public void  prevVolume(){
-        if (currentVolume == 0){
-            return;
-        }
-        else{
-            currentVolume--;
-        }
-        this.currentVolume=currentVolume;
+        public void  prevVolume(){
+            if (currentVolume == 0){
+                return;
+            }
+            else{
+                currentVolume--;
+            }
+            this.currentVolume=currentVolume;
 
-    }
-    public void  nextVolume(){
-        if (currentVolume == 100){
-            return;
         }
-        else{
-            currentVolume++;
+        public void  nextVolume(){
+            if (currentVolume == 100){
+                return;
+            }
+            else{
+                currentVolume++;
+            }
+            this.currentVolume=currentVolume;
+
         }
-        this.currentVolume=currentVolume;
-
-    }
-
+//
 }

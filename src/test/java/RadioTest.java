@@ -49,8 +49,8 @@ public class RadioTest {
 
     @Test
     public void nextMaxStation() {
-        Radio radio = new Radio(17);
-        radio.setCurrentStation(17);
+        Radio radio = new Radio();
+        radio.setCurrentStation(9);
         radio.next();
         int expected = 0;
         int actual = radio.getCurrentStation();
@@ -154,4 +154,4 @@ public class RadioTest {
         Assertions.assertEquals(expected, actual);
     }
 }
-//
+

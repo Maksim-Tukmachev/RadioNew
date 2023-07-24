@@ -7,16 +7,17 @@ public class Radio {
     public Radio() {
         maxStation = 9;
     }
+
     public Radio(int stationCount) {
-        maxStation = stationCount ;
+        maxStation = stationCount - 1;
     }
 
     public void next() {
-        if (currentStation != maxStation) {
-            currentStation++;
+        if (currentStation == maxStation) {
+            currentStation = 0;
             return;
         } else {
-            currentStation = 0;
+            currentStation++;
             return;
         }
 

@@ -49,8 +49,8 @@ public class RadioTest {
 
     @Test
     public void nextMaxStation() {
-        Radio radio = new Radio();
-        radio.setCurrentStation(9);
+        Radio radio = new Radio(20);
+        radio.setCurrentStation(19);
         radio.next();
         int expected = 0;
         int actual = radio.getCurrentStation();
@@ -70,9 +70,9 @@ public class RadioTest {
     @Test
     public void prevStation() {
         Radio radio = new Radio(17);
-        radio.setCurrentStation(17);
+        radio.setCurrentStation(16);
         radio.prev();
-        int expected = 16;
+        int expected = 15;
         int actual = radio.getCurrentStation();
         Assertions.assertEquals(expected, actual);
     }
@@ -82,7 +82,7 @@ public class RadioTest {
         Radio radio = new Radio(17);
         radio.setCurrentStation(0);
         radio.prev();
-        int expected = 17;
+        int expected = 16;
         int actual = radio.getCurrentStation();
         Assertions.assertEquals(expected, actual);
     }
